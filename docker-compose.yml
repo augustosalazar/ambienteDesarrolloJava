@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  kali-netbeans:
+    image: augustosalazar/kali-netbeans-java:28
+    container_name: kali-netbeans
+    ports:
+      - "3011:3000"
+      - "3009:3001"
+    shm_size: "1gb"
+    volumes:
+      - ./config:/config
