@@ -38,11 +38,7 @@ mkdir config
 Ejecuta el comando **desde el mismo directorio donde está la carpeta `config`**.
 
 ```bash
-docker run -d \
-  --name kali-javadev \
-  -p 3011:3000 \
-  -v $(pwd)/config:/config \
-  augustosalazar/kali-javadev:latest
+docker run -d --name kali-javadev -p 3011:3000 -v "${PWD}/config:/config" augustosalazar/kali-netbeans-java:2
 ```
 
 Luego abre en el navegador:

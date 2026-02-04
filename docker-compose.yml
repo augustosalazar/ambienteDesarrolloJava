@@ -1,8 +1,6 @@
-version: "3.8"
-
 services:
   kali-netbeans:
-    image: augustosalazar/kali-netbeans-java:28
+    image: augustosalazar/kali-netbeans-java:2
     container_name: kali-netbeans
     ports:
       - "3011:3000"
